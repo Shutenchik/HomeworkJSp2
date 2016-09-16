@@ -1,0 +1,12 @@
+/*@mixin transform($tras) {
+	-webkit-transform $trans;
+	  -moz-transform $trans;
+	   -ms-transform $trans;
+		transform  $trans;
+}*/
+@mixin transform($trans) {
+  -webkit-transform: $trans;
+     -moz-transform: $trans;
+      -ms-transform: $trans;
+          transform: $trans;
+}
