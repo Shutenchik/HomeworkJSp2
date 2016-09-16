@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="vendor/css/cusel.css"> -->
+	<link rel="stylesheet" href="vendor/css/font-awesome.css">
+	<link rel="stylesheet" href="dist/css/style.min.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="vendor/js/jquery.jcarousel.min.js"></script>
+	<script src="vendor/js/cusel.js"></script>
+	<script src="vendor/js/jScrollPane.js"></script>
+	<script src="vendor/js/jQuery.checkbox.js"></script>
+	<script src="vendor/js/jquery.color.js"></script>
+	<script src="dist/js/script1.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+	<nav>
+			<ul class="content">
+				<li><a href="#">nav1</a></li>
+				<li class="dropdown"><a href="#">nav1<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+					<ul class="submenu">
+						<li><a href="#">nav2</a></li>
+						<li><a href="#">nav2</a></li>
+						<li class="dropdown"><a href="#">nav2
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</a>
+								<ul class="submenu submenu-second">
+									<li><a href="#">nav3</a></li>
+									<li><a href="#">nav3</a></li>
+									<li><a href="#">nav3</a></li>
+								</ul>
+							</li>
+					</ul>
+				</li>
+				<li><a href="#">nav1</a></li>
+				<li><a href="#">nav1</a></li>
+				<li><a href="#">nav1</a></li>
+			</ul>
+		</nav>
+		<div class="jcarousel-wrapper">
+			<div class="jcarousel">
+				<ul>
+					<li><img src="img/img1.jpg" width="600" height="350" alt=""></li>
+					<li><img src="img/img2.jpg" width="600" height="350" alt=""></li>
+					<li><img src="img/img3.jpg" width="600" height="350" alt=""></li>
+				</ul>
+			</div>
+			 <p class="jcarousel-pagination">
+        <a href="#1"></a>
+        <a href="#2"></a>
+        <a href="#3"></a>
+ 	 </p>
+		</div>
+	<a class="jcarousel-control-prev" href="#">&lsaquo;</a>
+    <a class="jcarousel-control-next" href="#">&rsaquo;</a>
+	
+
+
+	<select name="nameSelect" id="idSelect">
+		<option value="">Киев</option>
+		<option value="">Винница</option>
+		<option value="">Львов</option>
+		<option value="">Одесса</option>
+		<option value="">Чернигов</option>
+		<option value="">Черновцы</option>
+		<option value="">Херсон</option>
+	</select>
+
+<div class="check-wrapper">
+	<div class="checkBox">
+		<span class="niceCheck">	
+			<label for="check1">CheckBox1</label>
+			<input id="check1" type="checkbox">
+		</span>
+	</div>
+	
+	<div class="checkBox">
+		<span class="niceCheck">	
+			<label for="check2">CheckBox2</label>
+			<input id="check2" type="checkbox">
+		</span>
+	</div>
+	<div class="checkBox">
+		<span class="niceCheck">	
+			<label for="check3">CheckBox3</label>
+			<input id="check3" type="checkbox">
+		</span>	
+	</div>
+	
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>

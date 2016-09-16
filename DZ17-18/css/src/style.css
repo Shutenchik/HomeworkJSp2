@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background: #F0EFE7;
+  margin: 0;
+  padding: 0;
+  font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #4E443C;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+   
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+
+h1 {
+  color: #4E443C;
+  font-size: 36px;
+  font-weight: bold;
+ 
+}
+
+
+h2, h2 a {
+  color: #F14E32;
+   
+}
+
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+
+a {
+  color: #0388A6;
+
+}
+
+
+pre {
+  border: 1px solid #000;
+  overflow-x: auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.wrapper {
+  /*max-width: 620px;*/
+  padding: 0 20px 40px 20px;
+  margin: auto;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel-wrapper {
+  margin: 50px auto 0;
+  position: relative;
+  border: 10px solid #fff;
+  width: 600px;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #999;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel ul {
+  width: 1860px;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel li {
+  float: left;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 300px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: #4E443C;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 1px #000;
+  font: 24px/27px Arial, sans-serif;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel-control-prev {
+  left: 25%;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel-control-next {
+  right: 22%;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+  display: block;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+  opacity: .5;
+  cursor: default;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel-pagination a {
+  width: 5px;
+  height: 5px;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 5px;
+  background: #fff;
+  color: #4E443C;
+  border-radius: 14px;
+  padding: 3px;
+  text-align: center;
+  text-indent: -9999px;
+  margin-right: 2px;
+  opacity: .75;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+
+.jcarousel-pagination a.active {
+  background: #4E443C;
+  opacity: 1;
+    /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);*/
+}
+
+.check-wrapper {
+  width: 58%;
+  float: right;
+}
+
+
+.checkBox {
+  padding: 10px;
+}
+
+/*
+  styles for select
+*/
+.cusel,
+.cuselFrameRight,
+.jScrollArrowUp,
+.jScrollArrowDown {
+  background: url(../../img/select_bg.png) no-repeat;
+
+}
+ .cusel { /* общий вид селекта включая стрелку справа */
+  height: 30px;
+  margin: 0 30px;
+  background-position: left top;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 12px; /* общий вид селекта включая стрелку справа */
+  width: 151px !important; /* общий вид селекта включая стрелку справа */
+  border-radius: 9px; /* общий вид селекта включая стрелку справа */
+  top: -340px; /* общий вид селекта включая стрелку справа */
+  vertical-align: middle;
+}
+/*.cuselOpen {
+  width: 150px !important;
+
+}*/
+.cuselFrameRight { /* левая часть селект. обычно скругление и левая граница */
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: -26px;
+  height: 100%;
+  width: 38px;
+  background-position: right top; /* левая часть селект. обычно скругление и левая граница */
+  border-radius: 7px;
+}
+
+.cuselText { /* контейнер для отображенного текста селект */
+  height: 25px;
+  padding: 4px 0 0 20px; /* подбираем отступы и высоту для видимого текста в селекте */
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  width: 124px;
+  border-right: 1px solid #b7b6b6;
+}
+.cusel-scroll-pane{
+    padding: 0 3px;
+}
+.cusel-scroll-pane > span { /* оформление оптиона */
+  display: block;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 3px 10px 6px 5px; /* паддинг справа - это отступ текста от ползунка */
+  zoom: 1; /* оформление оптиона */
+  text-align: center;
+}
+.cusel-scroll-pane > span:hover,
+.cusel-scroll-pane .cuselOptHover { /* реакция оптиона на наведение */
+  background-color: #BBE4FA;
+  color: #fff;
+}
+.cusel-scroll-wrap .cuselActive { /* оформление активного оптиона в списке */
+  background: #69C1D7;
+  color: #fff;
+}
+
+.cuselItem label{
+    font-size:16px;
+    color:#000000;
+}
+
+label {
+}
+
+/*
+  styles for focus and hover
+*/
+.cusel:hover,
+.cusel:hover .cuselFrameRight,
+.cusel:focus,
+.cusel:focus .cuselFrameRight {
+  background-image: url(../../img/select_bg_focus.png);
+  outline: none;
+}
+
+
+/*
+  styles for disabled select
+*/
+.cusel.classDisCusel,
+.cusel.classDisCusel .cuselFrameRight {
+  background-image: url(../../img/select_bg.png);
+  filter: alpha(opacity=65);
+  opacity: .65;
+  cursor: default;
+}
+.classDisCusel .cuselText {
+  cursor: default;
+}
+
+/* Dropdown box for elements */
+#cuselBox {
+  z-index: 9999;
+  position: absolute;
+}
+
+
+/*
+  styles for scrollbar
+*/
+.cusel-scroll-wrap { /* контейнер для блока с прокруткой */
+  visibility: hidden;
+  width: 180px; /* контейнер для блока с прокруткой */
+  top: 100%;
+}
+.cusel-scroll-pane {
+  background: #DDFAFC;
+  height: 230px;
+  padding: 0px 3px;
+  width: 174px !important; /* фон выпадающего списка */
+}
+.cusel-scroll-wrap .jScrollPaneContainer {
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  border: 1px solid #bbbab0;
+  height: 230px;
+  width: 180px !important;
+  border-radius: 7px; /* границы выпадающего спиcка */
+}
+
+.cusel-scroll-wrap .jScrollPaneTrack { /* трек для ползунка прокрутки */
+  height: 100%;
+  width: 7px !important;
+  background: #ccc;
+  position: absolute;
+  top: 0;
+  right: 4px;
+}
+.cusel-scroll-wrap .jScrollPaneDrag { /* ползунок */
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 13px !important;
+  height: 25px !important;
+  right: -4px;
+}
+
+.cusel-scroll-wrap .jScrollPaneDragTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.cusel-scroll-wrap .jScrollPaneDragBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.cusel-scroll-wrap .jScrollArrowUp { /* стрелка вверх */
+  position: absolute;
+  top: 0;
+  right: 2px;
+  width: 26px;
+  height: 12px;
+  cursor: pointer;
+  background-position: -2px -26px;
+  overflow: hidden;
+}
+.cusel-scroll-wrap .jScrollArrowDown { /* стрелка вниз */
+  width: 25px;
+  height: 12px;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  right: 3px;
+  cursor: pointer;
+  background-position: -21px -26px;
+  overflow: hidden;
+}
+
+/*Стилизация чекбоксов*/
+.check-wrapper {
+  /*float: right;*/
+  width: 20%;
+  border-radius: 8px;
+  position: relative;
+  top: -340px;
+  background-color: bisque;
+  /*display: inline-block;*/
+}
+.checkBox {
+  margin: 10px;
+}
+
+.niceCheck {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  background-image: url(../../img/checkbox.png);
+  display: inline-block;
+}
+.niceCheck label {
+  padding-left: 37px;
+}
+.niceCheck input {
+  display: none;
+}
