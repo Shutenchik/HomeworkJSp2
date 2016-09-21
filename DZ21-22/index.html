@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Programming Test</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/src/tmpl.js"></script>
+	<script src="dist/style.min.css" ></script>
+</head>
+<body>
+
+<script type="text/template" id='render'>
+		<h1 class="alert alert-info text-center"><%= title %></h1>
+		<% for ( var i = 0; i < question.length; i++ ) { %>
+		<label for="" class="container col-lg-6 col-lg-offset-3 lead alert alert-success">
+			<%=   i+1+'. ' %><%= question[i] %>
+		</label>
+		<div class="container col-lg-6 col-lg-offset-3 alert alert-warning">
+			<% for ( j = 0; j < answer[i].length; j++ ) { %>
+				<input type="radio" name="<%= i %>" class=" col-lg-4 col-lg-offset-2 alert alert-warning radio" id="<%= i %><%= j %>">
+				<label for="<%= i %><%= j %>" class="label-block"><%= answer[i][j] %></label>
+			<% }; %>
+		</div>
+		<% }; %>
+		
+		<input type="submit" value="<%= button %>" class="btn btn-primary btn-lg col-lg-offset-3 col-lg-6">
+</script>
+
+</body>
+</html>

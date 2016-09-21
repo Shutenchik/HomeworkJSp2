@@ -1,0 +1,23 @@
+{
+  "name": "unit_test",
+  "version": "1.0.2",
+  "description": "unit-test",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jasmine": "^2.5.2",
+    "phantomjs": "^2.1.7"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2015-webpack": "^6.4.3",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "author": "Natalia Shutenko",
+  "license": "ISC"
+}
