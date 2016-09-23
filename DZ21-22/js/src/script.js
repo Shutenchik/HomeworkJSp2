@@ -29,16 +29,20 @@ $('body').append(renderPage);
 		for ( let i = 0; i < $getAnswer.length; i++) {$getAnswer[i].checked = false};
 		modalBox = $('.modalBox')
 		$(modalBox).animate({ top: '-50%' }, 500);
-		setTimeout(function () {
-        modalBox.remove();
-        $overlay.remove();
-      }, 500);
+		setTimeout( 
+			  () => {
+        	modalBox.remove();
+        	$overlay.remove();
+      	}, 500);
 	}
 
 	let showModal = (e) => {
 		e.preventDefault();
 		const rightAnswers = [2, 4, 6];
 		let rightAnswersCounter = 0;
+		let titleBestResult = '<div class="modalBox"><h1 class="head-Title"> Congrats! </h1><p class="test-done">Your score is: ';
+		let closeBtn = ' of 3</p> <button class="closeModal btn btn-success btn-test-done">close</button></div>';
+		let titleResult = '<div class="modalBox"><h1 class="head-Title">Your score is: ';
 		 $getAnswer = $('.radio');
 
 		// проверка правильных ответов
@@ -49,9 +53,9 @@ $('body').append(renderPage);
 			};
 		};
 		 	if ( rightAnswersCounter === 3 ) {
-		 		modalBox = $('<div class="modalBox"><h1 class="head-Title"> Congrats! </h1><p class="test-done">Your score is: ' + rightAnswersCounter +' of 3</p> <button class="closeModal btn btn-success btn-test-done">close</button></div>');		 	
+		 		modalBox = $( ` ${titleBestResult} ` + rightAnswersCounter + `  ${closeBtn}`);		 	
 		  } else {
-			modalBox = $('<div class="modalBox"><h1 class="head-Title">Your score is: ' + rightAnswersCounter + ' of 3</h1><button class="closeModal btn btn-success">close</button></div>');
+			modalBox = $( `${titleResult}` + rightAnswersCounter + `  ${closeBtn}`);
 		  }
 	
 		$overlay = $('<div class="modal-overlay">');

@@ -29,13 +29,13 @@
 	text-transform: uppercase;
 }
 
-/*.label-block, .checkBox {
+.label-block, .checkBox {
 	padding: 5px 0;
 }
 
 .label-block {
 	display: block;
-}*/
+}
 .head-Title {
 	margin-top: 30px;
 }
